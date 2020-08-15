@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[ShortenedUrls]
+(
+	[Id] INT IDENTITY(1,1) PRIMARY KEY, 
+    [LongUrl] VARCHAR(2048) NOT NULL, 
+    [ShortUrl] VARCHAR(50) NULL, 
+    [CreatedDate] DATETIME2 NOT NULL DEFAULT GETUTCDATE()
+)
+
+GO
